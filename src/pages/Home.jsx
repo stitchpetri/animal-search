@@ -1,4 +1,4 @@
-import MovieCard from "../components/MovieCard";
+
 import { useState, useEffect } from "react";
 import { getAnimals, searchAnimals } from "../services/api"; 
 import AnimalCard from "../components/AnimalCard";

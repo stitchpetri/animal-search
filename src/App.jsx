@@ -1,7 +1,7 @@
 
 import './App.css'
-import './components/MovieCard.jsx'
-import MovieCard from './components/MovieCard.jsx'
+// import '../../components/MovieCard.js'
+// import MovieCard from '../../components/MovieCard.js'
 import Home from './pages/Home.jsx'
 import Favorites from './pages/Favorites.jsx'
 import { Routes, Route } from 'react-router-dom'
