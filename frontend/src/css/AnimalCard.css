@@ -1,0 +1,87 @@
+.animal-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #181b2ec9;
+    transition: transform 0.2s;
+    height: auto; /* Auto height to fit content */
+    width: 270px; /* Set a fixed width */
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem; /* Reduce text size */
+}
+
+.animal-card:hover {
+    transform: translateY(-5px);
+}
+
+.animal-poster {
+    position: relative;
+    aspect-ratio: 2/3;
+    width: 100%;
+    height: 200px; /* Smaller image */
+}
+
+.animal-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.animal-info {
+    padding: 0.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.animal-info h3 {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.animal-info p {
+    font-size: 0.75rem;
+    color: #bbb;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  .favorite-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .favorite-btn.active {
+    color: #ff4757;
+  }
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+    .animal-card {
+        width: 120px; /* Even smaller on mobile */
+    }
+
+    .animal-info h3 {
+        font-size: 0.8rem;
+    }
+
+    .animal-info p {
+        font-size: 0.7rem;
+    }
+}
